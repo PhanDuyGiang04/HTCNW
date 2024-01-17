@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px auto;
+            padding: 0px;
+        }
+        
+        .wrapper {
+            height: 800px;
+            width: 1089px;
+            background-color: antiquewhite;
+            border: 1px solid black;
+        }
+        
+        .header {
+            height: 150px;
+            width: 1089px;
+            background-color: rgb(238, 165, 171);
+            position: relative;
+            border-bottom: 1px solid black;
+        }
+        
+        .header .p1 {
+            position: absolute;
+            right: 30px;
+            top: 35px;
+            font-size: 25px;
+            color: whitesmoke;
+        }
+        
+        .header:hover>.p1 {
+            color: rgb(175, 24, 70);
+        }
+        
+        .nav {
+            height: 50px;
+            width: 1089px;
+            background-color: rgb(233, 182, 116);
+            border-bottom: 1px solid black;
+        }
+        
+        .content {
+            height: 450px;
+            width: 1089px;
+            background-color: rgb(182, 226, 243);
+            position: relative;
+        }
+        
+        .footer {
+            height: 150px;
+            width: 1089px;
+            background-color: rgb(182, 243, 202);
+            position: relative;
+            border-top: 1px solid black;
+        }
+        
+        .clear {
+            clear: both;
+        }
+        
+        .menu li {
+            height: 50px;
+            width: 150px;
+            background-color: rgba(27, 238, 79, 0.048);
+            float: left;
+            text-indent: 20px;
+            line-height: 50px;
+            list-style-type: none;
+            position: relative;
+            border: 1px solid rebeccapurple;
+        }
+        
+        li a {
+            text-decoration: none;
+        }
+        
+        .menu li:hover {
+            background-color: rgb(214, 115, 108);
+        }
+        
+        li:hover>a {
+            font-style: italic;
+            color: blueviolet;
+        }
+        
+        .menu li .sub-menu {
+            display: none;
+            position: absolute;
+        }
+        
+        .menu li:hover>.sub-menu {
+            display: block;
+        }
+        
+        .menu li .sub-menu li:hover>.sub-menu {
+            display: block;
+            top: 0px;
+            left: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <img src="../img/iuhHeader.PNG" alt="" srcset="" width="1089" height="150">
+            <p class="p1"> Chuc mung nam moi </p>
+        </div>
+        <ul class="menu">
+            <li><a href="https://iuh.edu.vn">Home</a>
+                <ul class="sub-menu">
+                    <li><a href="https://iuh.edu.vn/">Gioi thieu</a></li>
+                    <li><a href="https://iuh.edu.vn/">Sinh vien</a></li>
+                    <li><a href="https://iuh.edu.vn/">Dao tao</a>
+                        <ul class="sub-menu">
+                            <li><a href="https://pdt.iuh.edu.vn">Trang dao tao</a></li>
+                            <li><a href="https://iuh.edu.vn/vi/dao-tao-quoc-te-s106.html">Trang quoc te</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="https://fit.iuh.edu.vn">Khoa CNTT</a></li>
+            <li><a href="https://sv.iuh.edu.vn">Dang nhap: IUH</a></li>
+            <li><a href="https://lms.iuh.edu.vn">LMS-IUH</a></li>
+            <li><a href="https://doantn.iuh.edu.vn/">Doan truong IUH</a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+
+</body>
+
+</html>
